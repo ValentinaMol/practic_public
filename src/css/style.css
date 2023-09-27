@@ -1,0 +1,30 @@
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+header {
+  background-color: rgb(252, 247, 247);
+  height: 60px;
+}
+
+.navigation {
+  color: rgb(97, 86, 86);
+  padding-top: 15px;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 100;
+}
+.navigation a {
+  color: rgb(66, 195, 66);
+  text-decoration: none;
+}
+
+.content .content_img {
+  width: 100%;
+}
