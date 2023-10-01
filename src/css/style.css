@@ -21,7 +21,7 @@ h1 {
   margin: 0 auto;
 }
 
-.container .navigaton {
+.navigaton {
   display: grid;
   grid-template-columns: 15% 20% 15% 50%;
   text-align: left;
@@ -33,17 +33,23 @@ h1 {
   font-weight: 100;
 }
 
-.container .navigaton li {
+.navigaton li {
   list-style-type: none;
 }
 
-.container a {
+.navigaton a {
   color: rgb(66, 195, 66);
   text-decoration: none;
 }
 
-.container .mobile a {
+.navigaton .mobile a {
   color: rgb(97, 86, 86);
+}
+
+.navigaton input {
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
 }
 
 .subheader .subheader_nav {
@@ -129,13 +135,101 @@ h2 {
 
 footer {
   border-top: solid 4px rgb(66, 195, 66);
-  padding-top: 20px;
+  padding: 15px 0 10px 0;
+
   background-color: rgb(105, 101, 101);
   margin-top: 40px;
   color: #fff;
+  font-style: "Roboto";
+  font-size: 16px;
 }
 
 footer p {
   margin-top: 40px;
   color: #fff;
+}
+
+.footer_columns {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 0.5fr;
+  align-items: start;
+  gap: 85px;
+}
+
+.footer_nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 0 0 10px 30px;
+  gap: 20px;
+  margin-top: 40px;
+  text-decoration: underline;
+}
+
+.footer_nav a {
+  color: #fff;
+}
+
+.footer_nav a:active,
+a:hover {
+  color: rgb(66, 195, 66);
+}
+.footer_contacts a {
+  color: #fff;
+}
+
+.footer_contacts a:active,
+a:hover {
+  color: rgb(66, 195, 66);
+}
+
+.content_columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  margin: 20px 30% 0 0;
+  gap: 20px;
+}
+
+.content_columns .content_nav a {
+  background-color: rgb(236, 236, 236);
+  color: rgb(97, 86, 86);
+  display: block;
+  padding: 15px;
+  margin-right: 50px;
+  text-decoration: none;
+}
+
+.content_columns .content_nav a:hover {
+  background-color: rgb(66, 195, 66);
+}
+
+.content_columns .content_nav .content_nav_active {
+  background-color: rgb(66, 195, 66);
+}
+
+.seil {
+  line-height: 25px;
+}
+.seil a {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
+.seil p {
+  font-size: 13px;
+  display: inline;
+  background-color: rgb(66, 195, 66);
+  border-radius: 3px;
+  padding: 4px;
+}
+
+.seil button {
+  display: block;
+  margin-top: 30px;
+  border: solid 1px lightgray;
+  border-radius: 3px;
+  background-color: #fff;
+  padding: 5px;
+  text-transform: uppercase;
+  color: rgb(48, 45, 45);
+  font-size: 12px;
 }
