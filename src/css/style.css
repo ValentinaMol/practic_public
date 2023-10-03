@@ -13,7 +13,8 @@ header {
 
 p,
 h2,
-h1 {
+h1,
+ul {
   color: rgb(97, 86, 86);
 }
 
@@ -83,18 +84,24 @@ h1 {
 
 .content .content_img {
   width: 100%;
+  margin-bottom: 30px;
 }
 
 aside {
   float: left;
   width: 25%;
+  overflow: hidden;
 }
 
 .content .content_info {
   float: right;
   width: 75%;
+  overflow: hidden;
 }
-h1,
+h1 {
+  margin-bottom: 30px;
+}
+
 h2 {
   margin-top: 30px;
 }
@@ -104,6 +111,15 @@ h2 {
 }
 .content_info .advantages {
   margin: 20px 40px;
+}
+
+.working_conditions {
+  margin-bottom: 50px;
+  line-height: 24px;
+}
+
+.working_conditions li {
+  list-style-type: circle;
 }
 
 .content .content_nav a {
@@ -257,4 +273,7 @@ a:hover {
   display: flex;
 
   width: 80%;
+}
+
+.content .working_conditions {
 }
