@@ -6,7 +6,7 @@
 }
 
 header {
-  background-color: rgb(236, 236, 236);
+  background-color: rgb(227, 227, 240);
   height: 60px;
   width: 100%;
 }
@@ -17,6 +17,11 @@ h1,
 ul,
 td {
   color: rgb(97, 86, 86);
+}
+h3 {
+  color: rgb(97, 86, 86);
+  margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .container {
@@ -85,6 +90,13 @@ td {
   color: white;
 }
 
+.subheader_catalog {
+  border: none;
+  font-size: 18px;
+  color: rgb(66, 195, 66);
+  max-width: 100px;
+}
+
 .content {
   margin-top: 30px;
   overflow: hidden;
@@ -145,8 +157,9 @@ h2 {
 }
 
 .about_company {
+  background-image: url("/src/img/noimage.png");
+
   margin-top: 5px;
-  background-color: rgb(230, 227, 227);
   height: 110px;
   padding-top: 1px;
 }
@@ -158,8 +171,7 @@ h2 {
 footer {
   border-top: solid 4px rgb(66, 195, 66);
   padding: 15px 0 15px 0;
-
-  background-color: rgb(105, 101, 101);
+  background-color: rgb(133, 123, 142);
   margin-top: 40px;
   color: #fff;
   font-style: "Roboto";
@@ -230,7 +242,7 @@ a:hover {
 
 .seil {
   line-height: 25px;
-  margin-bottom: 110px;
+  margin-bottom: 160px;
 }
 .seil a {
   font-size: 20px;
@@ -348,4 +360,137 @@ td:nth-child(0n + 1) {
 
 .content .employees_container .employees_item .employees_name2 {
   margin-bottom: 44px;
+}
+
+.contacts .contacts_feedback {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
+  gap: 30px;
+  background-image: url("/src/img/noimage.png");
+}
+
+.personal_info {
+  display: block;
+}
+
+.btn {
+  border: 0;
+  padding: 15px;
+  margin-top: 80px;
+  border-radius: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  background-color: rgb(66, 195, 66);
+  color: white;
+}
+
+.personal_info {
+  display: grid;
+  column-gap: 10px;
+}
+
+@media (max-width: 1136px) {
+  footer {
+    font-size: 13px;
+  }
+  .navigaton {
+    font-size: 15px;
+    grid-template-columns: 20% 30% 20% 30%;
+  }
+
+  .container {
+    max-width: 950px;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 755px;
+  }
+  .navigaton .search {
+    display: none;
+  }
+
+  .subheader .subheader_nav {
+    display: none;
+  }
+
+  .navigaton .skype {
+    margin-left: 20px;
+  }
+  .content .content_info {
+    float: none;
+    width: 100%;
+    overflow: none;
+  }
+  .content aside {
+    display: none;
+  }
+  .footer_columns .footer_nav {
+    max-width: 50%;
+  }
+  .footer_columns {
+    display: block;
+  }
+  .about_company {
+    height: 80px;
+  }
+  h2 {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 885px) {
+  .container {
+    max-width: 756px;
+  }
+}
+
+@media (max-width: 870px) {
+  .container {
+    max-width: 700px;
+  }
+  .container .navigaton {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 766px) {
+  .container .navigaton .skype {
+    display: none;
+  }
+  .container .navigaton {
+    grid-template-columns: 20% 30% 10% 40%;
+  }
+  .container {
+    max-width: 640px;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    max-width: 620px;
+  }
+}
+
+@media (max-width: 630px) {
+  .container {
+    max-width: 580px;
+  }
+  .container .navigaton {
+    grid-template-columns: 20% 40% 10% 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 526px;
+  }
 }
