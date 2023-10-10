@@ -43,6 +43,11 @@ h3 {
 .navigaton .search {
   text-align: end;
 }
+
+.navigaton .search_shortcut {
+  display: none;
+}
+
 .navigaton li {
   list-style-type: none;
 }
@@ -197,6 +202,10 @@ footer p {
   gap: 20px;
   margin-top: 40px;
   text-decoration: underline;
+}
+
+.footer_nav_short {
+  display: none;
 }
 
 .footer_nav a {
@@ -400,20 +409,35 @@ td:nth-child(0n + 1) {
   }
 
   .container {
-    max-width: 950px;
+    max-width: 85%;
   }
 }
 
 @media (max-width: 991px) {
   .container {
-    max-width: 755px;
+    max-width: 85%;
   }
+
   .navigaton .search {
     display: none;
   }
 
   .subheader .subheader_nav {
     display: none;
+  }
+
+  .content_columns .content_nav {
+    display: none;
+  }
+
+  .content_columns {
+    grid-template-columns: 2fr 3fr;
+    margin-top: 20px;
+  }
+
+  .content_columns img {
+    width: 100%;
+    margin-top: 0;
   }
 
   .navigaton .skype {
@@ -429,10 +453,16 @@ td:nth-child(0n + 1) {
   }
   .footer_columns .footer_nav {
     max-width: 50%;
+    display: none;
   }
   .footer_columns {
     display: block;
   }
+
+  .footer_adress p {
+    margin-top: 5px;
+  }
+
   .about_company {
     height: 80px;
   }
@@ -441,15 +471,18 @@ td:nth-child(0n + 1) {
   }
 }
 
-@media (max-width: 885px) {
+@media (max-width: 892px) {
   .container {
-    max-width: 756px;
+    max-width: 85%;
+  }
+  .container .navigaton {
+    font-size: 13px;
   }
 }
 
 @media (max-width: 870px) {
   .container {
-    max-width: 700px;
+    max-width: 85%;
   }
   .container .navigaton {
     font-size: 13px;
@@ -461,22 +494,22 @@ td:nth-child(0n + 1) {
     display: none;
   }
   .container .navigaton {
-    grid-template-columns: 20% 30% 10% 40%;
+    grid-template-columns: 20% 40% 10% 30%;
   }
   .container {
-    max-width: 640px;
+    max-width: 90%;
   }
 }
 
 @media (max-width: 670px) {
   .container {
-    max-width: 620px;
+    max-width: 90%;
   }
 }
 
 @media (max-width: 630px) {
   .container {
-    max-width: 580px;
+    max-width: 90%;
   }
   .container .navigaton {
     grid-template-columns: 20% 40% 10% 30%;
@@ -485,12 +518,12 @@ td:nth-child(0n + 1) {
 
 @media (max-width: 600px) {
   .container {
-    max-width: 550px;
+    max-width: 90%;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-    max-width: 526px;
+    max-width: 90%;
   }
 }
