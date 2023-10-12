@@ -65,10 +65,10 @@
               </select>
             </a>
             <a href="shares.html"">Акции</a>
-            <a href="index.html" class="active">Kомпания</a>
+            <a href="index.html">Kомпания</a>
             <a href="cooperation.html">Сотрудничество</a>
             <a href="news.html">Новости</a>
-            <a href="contact.html">Контакты</a>
+            <a href="contact.html" class="active">Контакты</a>
           </div>
       </div>
     </div>
@@ -127,18 +127,19 @@
     <h3>Задать вопрос</h3>
     <p>Менеджеры компании с радостью ответят на ваши вопросы и произведут расчет стоимости услуг и подготовят индивидуальное коммерческое предложение.</p>
   </div>
-  <div class="personal_info">
-    <label>Ваше имя: <input type="text" /></label>
-    <label>Телефон: <input type="phone" placeholder="+375-(_)__-__-__"></label>
-    <label>E-mail: <input type="email"></label>
-    <label>Интересующий товар/услуга: <input type="text" /></label></>
-     </div>
+  <form action="#">
+    <div class="personal_info">
+      <label>Ваше имя: <br><input name="name" required type="text" /></label>
+      <label>Телефон: <br><input name="phone" required type="phone" placeholder="+375-(_)__-__-__"></label>
+      <label>E-mail: <br><input name="emale" type="email"></label>
+      <label>Интересующий товар/услуга: <input type="text" /></label></>
+    </div>
   <div class="message">
-    <textarea name="comment" cols="40" rows="9"></textarea></p>
-    <p><input type="submit" value="Отправить" class="btn">
-
+    <p>Сообщение:<textarea name="comment" cols="40" rows="9" style="resize: none;"></textarea></p>
+    <input type="submit" value="Отправить" class="btn">
   </div>
-
+</form>
+  
 </div>
 
       </div>

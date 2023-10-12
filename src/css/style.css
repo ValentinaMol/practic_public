@@ -168,8 +168,8 @@ h2 {
 }
 
 .about_company {
-  background-image: url("/src/img/noimage.png");
-  height: 90px;
+  background-image: url("/src/img/bg.png");
+  height: 100px;
 }
 
 .about_company a {
@@ -419,10 +419,37 @@ td:nth-child(0n + 1) {
 
 .contacts .contacts_feedback {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 30% 70%;
   padding: 30px;
-  gap: 30px;
-  background-image: url("/src/img/noimage.png");
+  gap: 100px;
+  background-image: url("/src/img/bg.png");
+}
+
+.contacts_feedback form {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.contacts_feedback input {
+  height: 30px;
+  width: 220px;
+  margin-top: 15px;
+  border-color: rgb(133, 123, 142, 0.5);
+}
+
+.contacts_feedback input:active {
+  border-color: rgb(133, 123, 142, 0.5);
+}
+
+.contacts_feedback .message textarea {
+  margin-top: 15px;
+}
+
+.contacts_feedback .message .btn {
+  margin-top: 55px;
+  margin-left: 55px;
 }
 
 .personal_info {
@@ -432,7 +459,6 @@ td:nth-child(0n + 1) {
 .btn {
   border: 0;
   padding: 15px;
-  margin-top: 80px;
   border-radius: 10px;
   font-size: 15px;
   text-transform: uppercase;
@@ -473,10 +499,16 @@ td:nth-child(0n + 1) {
     /*display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: aquamarine;
+    background-color: rgba(142, 136, 149, 0.9);
     margin-top: 164px;
     margin-left: 618px;
-    width: 200px;*/
+    width: 200px;
+    transform: translateX(150%);
+    transition: transform 0.5s;*/
+  }
+
+  .subheader .subheader_nav.active {
+    transform: translateX(0);
   }
 
   .content_columns .content_nav {
@@ -580,6 +612,34 @@ td:nth-child(0n + 1) {
 }
 
 @media (max-width: 576px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    max-width: 90%;
+  }
+  .container .navigaton {
+    font-size: 11px;
+    grid-template-columns: 20% 50% 0% 30%;
+  }
+}
+
+@media (max-width: 475px) {
+  .container {
+    max-width: 90%;
+  }
+  .container .navigaton {
+    grid-template-columns: 60% 10% 0% 30%;
+  }
+  .container .navigaton .emale {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
   .container {
     max-width: 90%;
   }
