@@ -168,7 +168,7 @@ h2 {
 }
 
 .about_company {
-  background-image: url("/src/img/bg.png");
+  background: url("../img/bg.png");
   height: 100px;
 }
 
@@ -422,7 +422,7 @@ td:nth-child(0n + 1) {
   grid-template-columns: 30% 70%;
   padding: 30px;
   gap: 100px;
-  background-image: url("/src/img/bg.png");
+  background: url("../img/bg.png");
 }
 
 .contacts_feedback form {
